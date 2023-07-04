@@ -1,0 +1,3 @@
+Correções:
+Q1: O contrato deveria ser calcula-porcentagem: Número Número -> Número.
+Q3: Faltaram testes com check-expect (conforme exemplos de testes no template).

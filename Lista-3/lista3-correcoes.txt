@@ -1,0 +1,3 @@
+Correções:
+Q2: faltou o caso da vacina "A" e o número de dias = 60
+Q4: evite uso de boolean=?

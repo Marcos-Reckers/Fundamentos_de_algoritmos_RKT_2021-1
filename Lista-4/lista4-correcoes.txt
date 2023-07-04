@@ -1,0 +1,19 @@
+Correções:
+Q2: Na definição de dados, quando escrevemos o elemento da estrutura, escrevemos os argumentos com nomes diferentes do atributo. 
+    Por ex.: (make-carta uma-cor um-valor) ao invés de (make-carta cor valor). 
+    Não usou as constantes definidas na Q1 pra definir as cartas epeciais.
+    Não adianta definir constantes se você utilizar os números concretos no código.
+Q4: Faltou colocar o tipo (Carta) de cada elemento da estrutura. Faltou definir as 4 constantes do tipo Mão.
+Q5: Cuidado com a repetição de código. Poderia ter feito uma função auxiliar.
+Q6: Todas as tuas strings do resultado tem um espaço na frente, fazendo com que não passe nos testes. 
+    Se não fosse isso, passaria em quase todos, exceto nos testes em que a mão dada tem uma carta livre na primeira posição,
+	e a carta dada é uma carta preta. Tua função retorna a carta livre, mesmo que tenha uma carta possível de ser jogada em outras posições. 
+	Tua função assume que qualquer carta pode ser jogada em cima da carta preta, mesmo quando essa carta for a representação da posição LIVRE.
+	O erro provavelmente vem do uso da função feita na Q3, sem nenhuma alteração para funcionar com posições livres.
+	A solução seria alterar a função "jogada-valida?" ou então testar se a carta era livre em cada um dos casos do "cond" da função "define-jogada".
+	Não era tão óbvio que precisava destas alterações para a função funcionar corretamente, mas se os exemplos e testes tivessem cobrido todas
+	as possibilidades, teria testado para cartas na mesa com cor "preto" e notado o erro. Como foi um erro comum e não óbvio de resolver, 
+	não será descontado tanto quanto outros erros, mas espero que note a importância de se pensar com calma nos exemplos e testes.. 
+	Teu código não está muito bom. Você testou todas as possibilidades possíveis. 
+	Com 4 cartas isso até é plausível, mas agora imagine se fossem 10 cartas. Nas próximas, pense em dividir a solução em funções auxiliares.
+Q7: Parabéns! Seus desenhos ficaram muito bons!
